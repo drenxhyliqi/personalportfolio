@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <!--=============== REMIX - BOX ICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <!--=============== ANIMATE ON SCROLL LIBRARY ===============-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <label class="hamburger">
+            <input type="checkbox" />
+            <svg viewBox="0 0 32 32">
+              <path
+                class="line line-top-bottom"
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+              <path class="line" d="M7 16 27 16"></path>
+            </svg>
+          </label>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-0 mx-lg-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#courses"
+                >Courses</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <i class="ri-moon-line change-theme mx-auto" id="theme-button"></i>
+    <section id="main">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <!-- Text content -->
+          <div class="col-sm-12 col-md-8 col-lg-8 order-2 order-md-1">
+            <div class="profile_content">
+              <h2>Junior Front-End Developer</h2>
+              <p>
+                Hello, I'm Dren Xhyliq. A passionate Junior Front-end Developer
+                based in Prishtina, Kosovo.
+              </p>
+            </div>
+            <div class="profile__social">
+              <a
+                href="https://github.com/drenxhyliqi"
+                target="_blank"
+                class="profile__social-link">
+                <i class="ri-github-line"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/dren-xhyliqi-b41225273/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BZcBwvbPuR7GlIg50WD29bg%3D%3D"
+                target="_blank"
+                class="profile__social-link">
+                <i class="ri-linkedin-line"></i>
+              </a>
+            </div>
+            <div class="tech">
+              <h6 class="mt-3">| Tech Stack |</h6>
+              <div class="row">
+                <div class="tech__items">
+                  <box-icon type="logo" name="html5" color="#e34c26"></box-icon>
+                  <box-icon type="logo" name="css3" color="#2642e4"></box-icon>
+                  <box-icon
+                    type="logo"
+                    name="bootstrap"
+                    color="#563d7c"></box-icon>
+                  <box-icon
+                    type="logo"
+                    name="javascript"
+                    color="#f0db4f"></box-icon>
+                  <box-icon
+                    name="c-plus-plus"
+                    type="logo"
+                    color="#044F88"></box-icon>
+                  <box-icon name="java" type="logo" color="#f89820"></box-icon>
+                  <!-- <box-icon
+                  name="visual-studio"
+                  type="logo"
+                  color="#0078d7"></box-icon> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Profile image -->
+          <div class="col-sm-12 col-md-4 col-lg-4 order-1 order-md-2 profile">
+            <div class="profile__border img-fluid">
+              <div class="profile__perfil">
+                <img src="img/profile.png" alt="profile" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--======ABOUT SECTION=====-->
+    <section id="about">
+      <div class="container">
+        <div
+          class="row d-flex justify-content-center align-items-center p-2"
+          data-aos="fade-up"
+          data-aos-duration="3000">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="about_img">
+              <img
+                src="img/IMG_8610.JPG"
+                alt="about"
+                class="img-fluid rounded" />
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 p-4"
+            data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="about_content">
+              <p class="text-primary fs-6">ABOUT ME</p>
+              <h4>
+                A dedicated Front-End developer based in Prishtina, Kosovo
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam sit impedit voluptas tenetur enim quasi similique eos
+                sunt maxime numquam voluptates voluptatibus a, totam tempora
+                consequatur molestias tempore dolores ea perferendis temporibus
+                accusantium ratione vitae sint nobis. Sunt labore pariatur
+                doloribus, fugit adipisci sapiente ex!
+              </p>
+              <a download="" href="pdf/Dren Xhyliqi CV.pdf" class="button">
+                Download CV <i class="ri-download-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--======PROJECTS SECTION=====-->
+    <section id="projects">
+      <div class="container" data-aos="fade-up" data-aos-duration="3000">
+        <p class="text-primary fs-4">PORTFOLIO</p>
+        <h3>Each projects is s unique piece of development</h3>
+        <!--===========FIRST PROJECT==================-->
+        <div class="row d-flex justify-content-center align-items-center">
+          <div
+            class="col-sm-12 col-md-12 col-lg-7"
+            data-aos="fade-up"
+            data-aos-duration="2000">
+            <div class="project_img">
+              <img
+                src="/img/fcmalisheva.png"
+                alt="football club website"
+                class="img-fluid" />
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-12 col-lg-5"
+            data-aos="fade-up"
+            data-aos-duration="2000">
+            <div class="project_content">
+              <h4>FC MALISHEVA FOOTBALL CLUB</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus culpa quaerat libero dolores fuga omnis blanditiis
+                commodi possimus earum quibusdam soluta illum tempore, sunt nam.
+              </p>
+              <box-icon type="logo" name="html5" color="#e34c26"></box-icon>
+              <box-icon type="logo" name="css3" color="#2642e4"></box-icon>
+              <box-icon type="logo" name="bootstrap" color="#563d7c"></box-icon>
+              <box-icon
+                type="logo"
+                name="javascript"
+                color="#f0db4f"></box-icon>
+            </div>
+            <div class="see d-flex align-items-center">
+              <p class="mb-0">Code</p>
+              <a
+                href="https://github.com/drenxhyliqi/fcmalisheva/tree/main/fcmalisheva"
+                target="_blank"
+                class="profile__social-link mx-1">
+                <i class="ri-github-line"></i>
+              </a>
+              <p class="mb-0 ms-4">Live Demo</p>
+              <a
+                href="https://fcmalisheva.netlify.app/"
+                target="_blank"
+                class="profile__social-link mx-1">
+                <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--==========SECOND PROJECT=========-->
+        <div class="row d-flex justify-content-center align-items-center">
+          <div
+            class="col-sm-12 col-md-12 col-lg-7"
+            data-aos="fade-up"
+            data-aos-duration="2000">
+            <div class="project_img">
+              <img
+                src="/img/deerhost.png"
+                alt="football club website"
+                class="img-fluid" />
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-12 col-lg-5"
+            data-aos="fade-up"
+            data-aos-duration="2000">
+            <div class="project_content">
+              <h4>DeerHost WebHosting Company</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus culpa quaerat libero dolores fuga omnis blanditiis
+                commodi possimus earum quibusdam soluta illum tempore, sunt nam.
+              </p>
+              <box-icon type="logo" name="html5" color="#e34c26"></box-icon>
+              <box-icon type="logo" name="css3" color="#2642e4"></box-icon>
+              <box-icon type="logo" name="bootstrap" color="#563d7c"></box-icon>
+            </div>
+            <div class="see d-flex align-items-center">
+              <p class="mb-0">Code</p>
+              <a
+                href="https://github.com/drenxhyliqi/deerhost"
+                target="_blank"
+                class="profile__social-link mx-1">
+                <i class="ri-github-line"></i>
+              </a>
+              <p class="mb-0 ms-4">Live Demo</p>
+              <a
+                href="https://deerhost.netlify.app/"
+                target="_blank"
+                class="profile__social-link mx-1">
+                <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--==========THIRD PROJECT=========-->
+        <div class="row d-flex justify-content-center align-items-center">
+          <div
+            class="col-sm-12 col-md-12 col-lg-7"
+            data-aos="fade-up"
+            data-aos-duration="2000">
+            <div class="project_img">
+              <img
+                src="/img/cloudflare.png"
+                alt="football club website"
+                class="img-fluid" />
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-12 col-lg-5"
+            data-aos="fade-up"
+            data-aos-duration="2000">
+            <div class="project_content">
+              <h4>CloudFlare Website Clone</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus culpa quaerat libero dolores fuga omnis blanditiis
+                commodi possimus earum quibusdam soluta illum tempore, sunt nam.
+              </p>
+              <box-icon type="logo" name="html5" color="#e34c26"></box-icon>
+              <box-icon type="logo" name="css3" color="#2642e4"></box-icon>
+              <box-icon type="logo" name="bootstrap" color="#563d7c"></box-icon>
+            </div>
+            <div class="see d-flex align-items-center">
+              <p class="mb-0">Code</p>
+              <a
+                href="https://github.com/drenxhyliqi/cloudclone"
+                target="_blank"
+                class="profile__social-link mx-1">
+                <i class="ri-github-line"></i>
+              </a>
+              <p class="mb-0 ms-4">Live Demo</p>
+              <a
+                href="https://cloudclone.netlify.app/"
+                target="_blank"
+                class="profile__social-link mx-1">
+                <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="scrollreveal.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
