@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dren Xhyliqi | Contact</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <!--=============== REMIX - BOX ICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <!--=============== ANIMATE ON SCROLL LIBRARY ===============-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    
+    <!--========INTERNAL CSS===========-->
+    <style>
+      :root {
+  --hue: 940;
+  --sat: 65%;
+  --lig: 50%;
+  --first-color: hsl(var(--hue), var(--sat), var(--lig));
+  --first-color-alt: hsl(var(--hue), var(--sat), 17%); /* -4% */
+  --title-color: hsl(var(--hue), 12%, 15%);
+  --text-color: hsl(var(--hue), 12%, 45%);
+  --text-color-light: hsl(var(--hue), 8%, 75%);
+  --text-color-lighten: hsl(var(--hue), 8%, 92%);
+  --body-color: hsl(var(--hue), 100%, 99%);
+  --container-color: #fff;
+}
+.contact_content a{
+  color: var(--text-color);
+}
+.contact_content a:hover{
+  color: var(--first-color);
+}
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: var(--title-color) !important ;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px var(--first-color);
+   border-radius: 0; 
+	color: var(--title-color);
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+   border-radius: 0; 
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 100%;
+	height: 100px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: var(--title-color);
+}
+
+:-moz-placeholder { 
+	color: var(--title-color);
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: var(--title-color);
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: var(--title-color);
+}
+
+#form_button {
+  background: none;
+  border: solid 2px var(--first-color);
+  color: var(--text-color);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875em;
+  font-weight: 600;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: var(--first-color);
+  color: #fff !important ;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 0px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {  
+  .underline {
+    width: 48px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .underline {
+    width: 33px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <label class="hamburger">
+            <input type="checkbox" />
+            <svg viewBox="0 0 32 32">
+              <path
+                class="line line-top-bottom"
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+              <path class="line" d="M7 16 27 16"></path>
+            </svg>
+          </label>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-0 mx-lg-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#courses"
+                >Courses</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <i class="ri-moon-line change-theme mx-auto" id="theme-button"></i>
+  </head>
+  <body>
+    <div class="loader"></div>
+    <section id="contact">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="contact_content">
+                        <h1>Let's Talk</h1>
+                        <p>Get in touch with me!</p>
+                        <a href="tel:049-218-791" class="text-decoration-none">+383 49 218 791</a><br>
+                        <a href="mailto:xhyliqiidren@gmail.com" class="text-decoration-none">xhylqiidren@gmail.com</a>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8">
+                    <div class="contact_form">
+                      <form action="https://formsubmit.co/xhyliqiidren@gmail.com" method="post" id="contact_form">
+                        <div class="name">
+                          <label for="name"></label>
+                          <input type="text" placeholder="Name" name="name" id="name_input" required>
+                        </div>
+                        <div class="email">
+                          <label for="email"></label>
+                          <input type="email" placeholder="E-Mail" name="email" id="email_input" required>
+                        </div>
+                        <div class="telephone">
+                          <label for="name"></label>
+                          <input type="text" placeholder="Number" name="telephone" id="telephone_input" required>
+                        </div>  
+                        <div class="message">
+                          <label for="message"></label>
+                          <textarea name="message" placeholder="Message" id="message_input" cols="30" rows="5" required></textarea>
+                        </div>
+                        <input type="hidden" name="_next" value="https://drenxhyliqi.site/thankyou.html">
+                        <input type="hidden" name="_blacklist" value="You submitted to many times, try again later!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="submit">
+                          <input type="submit" value="Send Message" id="form_button" / >
+                        </div>
+                      </form><!-- // End form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </body>
+   <script src="script.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="scrollreveal.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

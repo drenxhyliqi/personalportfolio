@@ -22,6 +22,7 @@
   </head>
   <body>
     <div class="loader"></div>
+
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
@@ -46,10 +47,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-0 mx-lg-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
+              <a class="nav-link" aria-current="page" href="index.html"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link active" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="contact.html"
@@ -69,112 +72,6 @@
       </div>
     </nav>
     <i class="ri-moon-line change-theme mx-auto" id="theme-button"></i>
-    <section id="main">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <!-- Text content -->
-          <div class="col-sm-12 col-md-8 col-lg-8 order-2 order-md-1">
-            <div class="profile_content">
-              <h2>Junior Front-End Developer</h2>
-              <p>
-                Hello, I'm Dren Xhyliq. A passionate Junior Front-end Developer
-                based in Prishtina, Kosovo.
-              </p>
-            </div>
-            <div class="profile__social">
-              <a
-                href="https://github.com/drenxhyliqi"
-                target="_blank"
-                class="profile__social-link">
-                <i class="ri-github-line"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/dren-xhyliqi-b41225273/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BZcBwvbPuR7GlIg50WD29bg%3D%3D"
-                target="_blank"
-                class="profile__social-link">
-                <i class="ri-linkedin-line"></i>
-              </a>
-            </div>
-            <div class="tech">
-              <h6 class="mt-3">| Tech Stack |</h6>
-              <div class="row">
-                <div class="tech__items">
-                  <box-icon type="logo" name="html5" color="#e34c26"></box-icon>
-                  <box-icon type="logo" name="css3" color="#2642e4"></box-icon>
-                  <box-icon
-                    type="logo"
-                    name="bootstrap"
-                    color="#563d7c"></box-icon>
-                  <box-icon
-                    type="logo"
-                    name="javascript"
-                    color="#f0db4f"></box-icon>
-                  <box-icon
-                    name="c-plus-plus"
-                    type="logo"
-                    color="#044F88"></box-icon>
-                  <box-icon name="java" type="logo" color="#f89820"></box-icon>
-                  <!-- <box-icon
-                  name="visual-studio"
-                  type="logo"
-                  color="#0078d7"></box-icon> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Profile image -->
-          <div class="col-sm-12 col-md-4 col-lg-4 order-1 order-md-2 profile">
-            <div class="profile__border img-fluid">
-              <div class="profile__perfil">
-                <img src="img/profile.png" alt="profile" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--======ABOUT SECTION=====-->
-    <section id="about">
-      <div class="container">
-        <div
-          class="row d-flex justify-content-center align-items-center p-2"
-          data-aos="fade-up"
-          data-aos-duration="3000">
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="about_img">
-              <img
-                src="img/IMG_8610.JPG"
-                alt="about"
-                class="img-fluid rounded" />
-            </div>
-          </div>
-          <div
-            class="col-sm-12 col-md-6 col-lg-6 p-4"
-            data-aos="fade-up"
-            data-aos-duration="3000">
-            <div class="about_content">
-              <p class="text-primary fs-6">ABOUT ME</p>
-              <h4>
-                A dedicated Front-End developer based in Prishtina, Kosovo
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam sit impedit voluptas tenetur enim quasi similique eos
-                sunt maxime numquam voluptates voluptatibus a, totam tempora
-                consequatur molestias tempore dolores ea perferendis temporibus
-                accusantium ratione vitae sint nobis. Sunt labore pariatur
-                doloribus, fugit adipisci sapiente ex!
-              </p>
-              <a download="" href="pdf/Dren Xhyliqi CV.pdf" class="button">
-                Download CV <i class="ri-download-line"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!--======PROJECTS SECTION=====-->
     <section id="projects">
       <div class="container" data-aos="fade-up" data-aos-duration="3000">
@@ -321,71 +218,68 @@
               </a>
             </div>
           </div>
+        </div>
+        <!--===========FORTH PROJECT==================-->
+        <div class="row d-flex justify-content-center align-items-center">
+          <div
+            class="col-sm-12 col-md-12 col-lg-7"
+            data-aos="fade-up"
+            data-aos-duration="2000">
+            <div class="project_img">
+              <img
+                src="/img/fcmalisheva.png"
+                alt="football club website"
+                class="img-fluid" />
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-12 col-lg-5"
+            data-aos="fade-up"
+            data-aos-duration="2000">
+            <div class="project_content">
+              <h4>FC MALISHEVA FOOTBALL CLUB</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus culpa quaerat libero dolores fuga omnis blanditiis
+                commodi possimus earum quibusdam soluta illum tempore, sunt nam.
+              </p>
+              <box-icon type="logo" name="html5" color="#e34c26"></box-icon>
+              <box-icon type="logo" name="css3" color="#2642e4"></box-icon>
+              <box-icon type="logo" name="bootstrap" color="#563d7c"></box-icon>
+              <box-icon
+                type="logo"
+                name="javascript"
+                color="#f0db4f"></box-icon>
+            </div>
+            <div class="see d-flex align-items-center">
+              <p class="mb-0">Code</p>
+              <a
+                href="https://github.com/drenxhyliqi/fcmalisheva/tree/main/fcmalisheva"
+                target="_blank"
+                class="profile__social-link mx-1">
+                <i class="ri-github-line"></i>
+              </a>
+              <p class="mb-0 ms-4">Live Demo</p>
+              <a
+                href="https://fcmalisheva.netlify.app/"
+                target="_blank"
+                class="profile__social-link mx-1">
+                <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </div>
           <a
-            href="projects.html"
+            href="index.html"
             class="see_more mt-5"
             data-aos="fade-up"
             data-aos-duration="2000">
             <div class="button">
-              See More<i class="ri-code-s-slash-fill"></i>
+              Go Back<i class="ri-code-s-slash-fill"></i>
             </div>
           </a>
         </div>
       </div>
     </section>
-    <!--==========EDUCATION PROJECT=========-->
-    <section id="education">
-      <div class="container">
-        <h3 data-aos="fade-up" data-aos-duration="2000">Education</h3>
-        <div class="row">
-          <div class="col-12">
-            <div class="first" data-aos="fade-up" data-aos-duration="3000">
-              <div class="card">
-                <div class="card-header">
-                  <span>Gymnasium - 'Loyola-Gymnasium'</span><br />
-                  2020 - 2023
-                </div>
-                <div class="card-body">
-                  <h6 class="card-title">High School Diploma</h6>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dicta praesentium dolorem sed architecto ipsa. Excepturi
-                    dolorem similique ducimus velit illo, architecto doloribus
-                    possimus earum magni!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br />
-        <div class="row">
-          <div class="col-12">
-            <div class="second" data-aos="fade-up" data-aos-duration="2000">
-              <div class="card">
-                <div class="card-header">
-                  <span>University of Prishtina - 'Hasan Prishtina'</span><br />
-                  2023 - Present
-                </div>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    Bachelor of Computer and Electrical Engineering
-                  </h6>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Cumque reiciendis quidem quod impedit soluta eaque
-                    distinctio perferendis recusandae sint adipisci praesentium
-                    eligendi consequatur sunt, ipsa ut voluptates dicta!
-                    Architecto, unde suscipit.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!--======FOOTER=====-->
     <footer class="footer container">
       <span class="footer__copy">

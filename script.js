@@ -1,3 +1,13 @@
+/*-----LOADER-----*/
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+  loader.classList.add("loader-hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
 /*=============== DARK LIGHT THEME ===============*/
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
@@ -50,6 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: "2500",
     delay: "400",
   });
+  sr.reveal(".contact_content", { delay: 400 });
+  sr.reveal(".contact_form", { delay: 500 });
   sr.reveal(".ri-moon-line");
   sr.reveal(".navbar");
   sr.reveal(".profile_content", { delay: 500 });
@@ -57,3 +69,23 @@ document.addEventListener("DOMContentLoaded", function () {
   sr.reveal(".tech", { delay: 800 });
   sr.reveal(".profile", { delay: 450 });
 });
+/*======SCROLL TO TOP====== */
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // Smooth scrolling behavior
+  });
+}
