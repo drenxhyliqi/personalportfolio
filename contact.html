@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="shortcut icon" type="image" href="img/logo.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dren Xhyliqi | Contact</title>
@@ -35,6 +36,9 @@
   --text-color-lighten: hsl(var(--hue), 8%, 92%);
   --body-color: hsl(var(--hue), 100%, 99%);
   --container-color: #fff;
+}
+*{
+  cursor: none !important;
 }
 .contact_content a{
   color: var(--text-color);
@@ -151,7 +155,6 @@ textarea {
   background: none;
   border: solid 2px var(--first-color);
   color: var(--text-color);
-  cursor: pointer;
   display: inline-block;
   font-size: 0.875em;
   font-weight: 600;
@@ -232,7 +235,7 @@ textarea {
               <a class="nav-link active" aria-current="page" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
+              <a class="nav-link" href="index.html">Education</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#courses"
@@ -246,6 +249,8 @@ textarea {
     <i class="ri-moon-line change-theme mx-auto" id="theme-button"></i>
   </head>
   <body>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
     <div class="loader"></div>
     <section id="contact">
         <div class="container">
@@ -279,7 +284,6 @@ textarea {
                           <textarea name="message" placeholder="Message" id="message_input" cols="30" rows="5" required></textarea>
                         </div>
                         <input type="hidden" name="_next" value="https://drenxhyliqi.site/thankyou.html">
-                        <input type="hidden" name="_blacklist" value="You submitted to many times, try again later!">
                         <input type="hidden" name="_captcha" value="false">
                         <div class="submit">
                           <input type="submit" value="Send Message" id="form_button" / >
@@ -290,6 +294,38 @@ textarea {
             </div>
         </div>
     </section>
+     <!--======FOOTER=====-->
+   <footer class="footer container">
+      <div class="footer_icons d-flex justify-content-center">
+        <a
+          href="https://www.instagram.com/drenxhyliqii/"
+          target="_blank"
+          class="text-decoration-none"
+          ><i class="ri-instagram-line"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/dren-xhyliqi-b41225273/"
+          target="_blank"
+          ><i class="ri-linkedin-fill"></i
+        ></a>
+        <a href="https://www.facebook.com/drenxhyliqii" target="_blank"
+          ><i class="ri-facebook-fill"></i
+        ></a>
+        <a
+          href="https://api.whatsapp.com/send?phone=49218791&amp;text=Pershendetje!"
+          target="_blank"
+          ><i class="ri-whatsapp-line"></i>
+        </a>
+      </div>
+      <span class="footer__copy">
+        &#169; 2024 Dren Xhyliqi. All rights reserved! <br />
+        <img
+          src="/img/signature.png"
+          alt="img"
+          width="250px"
+          class="img-fluid" />
+      </span>
+    </footer>
   </body>
    <script src="script.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
