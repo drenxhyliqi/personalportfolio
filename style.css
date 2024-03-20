@@ -202,7 +202,9 @@ body.dark-theme {
   justify-content: center;
 }
 .profile__perfil img {
-  width: 270px;
+  margin-top: 2rem;
+  max-width: 170% !important;
+  max-height: 120% !important;
 }
 .profile__border {
   border: 3.5px solid var(--first-color);
@@ -309,10 +311,12 @@ body.dark-theme {
   right: 25px;
   background: var(--first-color) !important;
   border: 1px solid var(--black-color);
-  border-radius: 2.8rem;
+  border-radius: 3rem;
   padding: 0.8rem !important;
   transition: all 0.3s ease;
+  box-shadow: 0 17px 10px rgba(0, 0, 0, 0.5); /* Bottom shadow */
 }
+
 #scrollToTopBtn:hover {
   opacity: 0.5;
 }
@@ -333,16 +337,21 @@ body.dark-theme {
 /*------------COSTUM CURSOR------*/
 .cursor {
   position: fixed;
-  width: 50px;
-  height: 50px;
+  width: 38px;
+  height: 38px;
   border: 1px solid var(--first-color);
   border-radius: 50%;
   left: 0;
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  z-index: 1000;
+  z-index: 999999;
+  transition: all 0.1s;
+  background-color: var(--first-color);
+  opacity: 0.2;
+  box-shadow: 0 0 10px 5px var(--first-color); /* Blue glowing effect */
 }
+
 .cursor2 {
   position: fixed;
   width: 8px;
@@ -354,9 +363,10 @@ body.dark-theme {
   left: 0;
   top: 0;
   transform: translate(-50%, -50%);
-  z-index: 1000;
+  z-index: 999999;
 }
 
+/*=============================================*/
 /* For devices with a screen width up to 480px (smartphones) */
 @media only screen and (max-width: 480px) {
   .change-theme {

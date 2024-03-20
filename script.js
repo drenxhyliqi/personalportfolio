@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
   sr.reveal(".contact_form", { delay: 500 });
   sr.reveal(".ri-moon-line");
   sr.reveal(".navbar");
+  sr.reveal(".form");
   sr.reveal(".profile_content", { delay: 500 });
   sr.reveal(".profile__social", { delay: 700 });
   sr.reveal(".tech", { delay: 800 });
@@ -96,4 +97,39 @@ var cursor2 = document.querySelector(".cursor2");
 document.addEventListener("mousemove", function (e) {
   cursor.style.cssText = cursor2.style.cssText =
     "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+});
+
+// Form
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact_form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name_input");
+    const email = document.getElementById("email_input");
+    const phone = document.getElementById("telephone_input");
+    const message = document.getElementById("message_input");
+
+    const bodyMessage = `Full name: ${name.value}<br> Email: ${email.value}<br> Phone: ${phone.value} <br> Message: ${message.value}`;
+    const subject = "Your Custom Subject Here";
+
+    Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "xhyliqiidren@gmail.com",
+      Password: "B7DD7E015E477F864445C3ADB186B536334B",
+      To: "xhyliqiidren@gmail.com",
+      From: "xhyliqiidren@gmail.com",
+      Subject: subject,
+      Body: bodyMessage,
+    }).then((message) => {
+      if (message == "OK") {
+        Swal.fire({
+          title: "Faleminderit!",
+          text: "Do te ju kontaktoje se shpejti!",
+          icon: "success",
+        });
+        form.reset();
+      }
+    });
+  });
 });

@@ -265,26 +265,24 @@ textarea {
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-8">
-                    <div class="contact_form">
-                      <form action="https://formsubmit.co/xhyliqiidren@gmail.com" method="post" id="contact_form">
+                    <div class="form">
+                      <form  id="contact_form" action="#">
                         <div class="name">
                           <label for="name"></label>
-                          <input type="text" placeholder="Name" name="name" id="name_input" required>
+                          <input type="text" placeholder="Name" autocomplete="off" name="name" id="name_input" required>
                         </div>
                         <div class="email">
                           <label for="email"></label>
-                          <input type="email" placeholder="E-Mail" name="email" id="email_input" required>
+                          <input type="email" placeholder="E-Mail"  autocomplete="off" name="email" id="email_input" required>
                         </div>
                         <div class="telephone">
                           <label for="name"></label>
-                          <input type="text" placeholder="Number" name="telephone" id="telephone_input" required>
+                          <input type="text" placeholder="Number" autocomplete="off" name="telephone" id="telephone_input" required>
                         </div>  
                         <div class="message">
                           <label for="message"></label>
                           <textarea name="message" placeholder="Message" id="message_input" cols="30" rows="5" required></textarea>
                         </div>
-                        <input type="hidden" name="_next" value="https://drenxhyliqi.site/thankyou.html">
-                        <input type="hidden" name="_captcha" value="false">
                         <div class="submit">
                           <input type="submit" value="Send Message" id="form_button" / >
                         </div>
@@ -312,7 +310,7 @@ textarea {
           ><i class="ri-facebook-fill"></i
         ></a>
         <a
-          href="https://api.whatsapp.com/send?phone=49218791&amp;text=Pershendetje!"
+          href="https://api.whatsapp.com/send?phone=38349218791&amp;text=Pershendetje Dren!"
           target="_blank"
           ><i class="ri-whatsapp-line"></i>
         </a>
@@ -336,6 +334,10 @@ textarea {
   <!--=============== SCROLLREVEAL ===============-->
   <script src="scrollreveal.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--==== FORM JS====-->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <script>
     AOS.init();
   </script>
