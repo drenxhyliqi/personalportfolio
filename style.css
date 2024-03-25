@@ -1,17 +1,16 @@
-/*=============== GOOGLE FONTS ===============*/
+/* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+/* VARIABLES CSS */
 :root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+  /* Colors */
+  /* Color mode HSL(hue, saturation, lightness) */
   /*
       Blue: hsl(207, 90%, 61%)
       Purple: hsl(250, 66%, 75%)
       Pink: hsl(356, 66%, 75%)
       Teal: hsl(174, 63%, 62%)
   */
-
   --hue: 940;
   --sat: 65%;
   --lig: 50%;
@@ -24,8 +23,8 @@
   --body-color: hsl(var(--hue), 100%, 99%);
   --container-color: #fff;
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+  /* Font and typography */
+  /* .5rem = 8px | 1rem = 16px ... */
   --body-font: "Poppins", sans-serif;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -33,6 +32,7 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 }
+
 @media screen and (min-width: 968px) {
   :root {
     --h2-font-size: 1.5rem;
@@ -42,8 +42,7 @@
     --smaller-font-size: 0.813rem;
   }
 }
-
-/*=============== BASE ===============*/
+/* BASE */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -51,6 +50,7 @@
   scroll-behavior: smooth;
   cursor: none !important;
 }
+
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -58,9 +58,8 @@ body {
   color: var(--text-color);
   transition: 0.3s; /* For animation dark mode */
 }
-h1,
-h2,
-h3 {
+
+h1, h2, h3 {
   color: var(--title-color);
   font-weight: 600;
 }
@@ -72,8 +71,8 @@ ul {
 a {
   text-decoration: none;
 }
-/*=============== THEME ===============*/
-/* .change-theme .hamburger .tech__items#scrollToTopBtn.footer_icons i:hover */
+
+/* THEME */
 .change-theme {
   position: absolute;
   top: 2.66rem;
@@ -81,37 +80,44 @@ a {
   font-size: 1.35rem;
   color: var(--title-color);
 }
+
 .change-theme:hover {
   color: var(--first-color);
 }
 
-/*========== Variables Dark theme ==========*/
+/* Variables Dark theme */
 body.dark-theme {
   --title-color: hsl(var(--hue), 12%, 95%);
   --text-color: hsl(var(--hue), 12%, 75%);
   --body-color: hsl(var(--hue), 40%, 8%);
   --container-color: hsl(var(--hue), 24%, 12%);
 }
-/*=======NAVBAR=======*/
+
+/* NAVBAR */
 .navbar {
   text-align: center;
   margin-top: 1.69rem;
   font-size: var(--h3-font-size);
 }
+
 .navbar-nav a {
   color: var(--text-color);
   padding-right: 1.7rem !important;
 }
+
 .navbar-nav a:hover {
   color: var(--first-color) !important;
 }
+
 .active {
   color: var(--first-color) !important;
 }
+
 .navbar-nav a:focus {
   color: var(--first-color);
 }
-/*------ LOADER ----- */
+
+/* LOADER */
 .loader {
   position: fixed;
   top: 0;
@@ -149,7 +155,7 @@ body.dark-theme {
   }
 }
 
-/*---- HAMBURGER MENU ----*/
+/* HAMBURGER MENU */
 .hamburger input {
   display: none;
 }
@@ -183,7 +189,7 @@ body.dark-theme {
   outline: none !important ;
 }
 
-/*=======MAIN STYLE=======*/
+/* MAIN STYLE */
 .container {
   padding: 6rem 4rem;
 }
@@ -249,7 +255,8 @@ body.dark-theme {
   width: fit-content;
   margin: auto;
 }
-/*==========ABOUT========*/
+
+/* ABOUT */
 #about img {
   box-shadow: 0px 8px 45px var(--first-color-alt);
 }
@@ -270,7 +277,8 @@ body.dark-theme {
 .button:hover {
   background-color: var(--first-color-alt);
 }
-/*=============== EDUCATION ===============*/
+
+/* EDUCATION */
 #education .container {
   padding: 2rem 10rem;
 }
@@ -294,9 +302,7 @@ body.dark-theme {
   border: none !important;
   color: var(--title-color);
 }
-
-/*=============== FOOTER ===============*/
-
+/* FOOTER */
 .footer__copy {
   display: block;
   margin: 2.5rem 0 2rem;
@@ -304,26 +310,93 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
 }
-/*====SCROLL===*/
-#scrollToTopBtn {
+
+/* SCROLL */
+.progress-wrap {
   position: fixed;
-  bottom: 15px;
-  right: 25px;
-  background: var(--first-color) !important;
-  border: 1px solid var(--black-color);
-  border-radius: 3rem;
-  padding: 0.8rem !important;
-  transition: all 0.3s ease;
-  box-shadow: 0 17px 10px rgba(0, 0, 0, 0.5); /* Bottom shadow */
+  right: 20px;
+  bottom: 32px;
+  height: 46px;
+  width: 46px;
+  display: block;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 2px rgba(193, 193, 193, 0.544);
+  z-index: 9998;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 200ms linear;
 }
 
-#scrollToTopBtn:hover {
-  opacity: 0.5;
+.progress-wrap.active-progress {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
-.ri-arrow-up-line {
-  font-size: 1.3rem;
-  color: #fff;
+
+.progress-wrap::after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f062";
+  text-align: center;
+  line-height: 46px;
+  font-size: 18px;
+  color: var(--first-color);
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  display: block;
+  z-index: 1;
+  transition: all 200ms linear;
 }
+
+.lightScrollIcon::after {
+  color: var(--first-color) !important;
+}
+
+.progress-wrap:hover::after {
+  opacity: 0;
+}
+
+.progress-wrap::before {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f062";
+  text-align: center;
+  line-height: 46px;
+  font-size: 18px;
+  opacity: 0;
+  background-image: linear-gradient(298deg, #ffffff, #005eff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  display: block;
+  z-index: 2;
+  transition: all 200ms linear;
+}
+
+.progress-wrap:hover::before {
+  opacity: 1;
+}
+
+.progress-wrap svg path {
+  fill: none;
+}
+
+.progress-wrap svg.progress-circle path {
+  stroke: var(--first-color);
+  stroke-width: 4;
+  box-sizing: border-box;
+  transition: all 200ms linear;
+}
+
 .footer_icons i {
   color: var(--first-color) !important;
   font-size: 1.3rem;
@@ -334,7 +407,8 @@ body.dark-theme {
 .footer_icons i:hover {
   transform: scale(1.1);
 }
-/*------------COSTUM CURSOR------*/
+
+/* CUSTOM CURSOR */
 .cursor {
   position: fixed;
   width: 38px;
@@ -345,7 +419,7 @@ body.dark-theme {
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  z-index: 999999;
+  z-index: 9999;
   transition: all 0.1s;
   background-color: var(--first-color);
   opacity: 0.2;
@@ -363,10 +437,11 @@ body.dark-theme {
   left: 0;
   top: 0;
   transform: translate(-50%, -50%);
-  z-index: 999999;
+  z-index: 9999;
 }
 
 /*=============================================*/
+
 /* For devices with a screen width up to 480px (smartphones) */
 @media only screen and (max-width: 480px) {
   .change-theme {
@@ -405,10 +480,6 @@ body.dark-theme {
   .navbar-nav a {
     padding-right: 0 !important;
   }
-  #scrollToTopBtn {
-    padding: 0.33rem 0.65rem !important;
-    right: 12px;
-  }
   .ri-arrow-up-line {
     font-size: 1rem;
   }
@@ -427,6 +498,7 @@ body.dark-theme {
 
 /* For devices with a screen width between 481px and 768px (landscape smartphones and small tablets) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Adjustments for this range of screen sizes */
   .change-theme {
     right: 8.6%;
     font-size: 1.2rem;
@@ -462,10 +534,6 @@ body.dark-theme {
   }
   .navbar-nav a {
     padding-right: 0 !important;
-  }
-  #scrollToTopBtn {
-    padding: 0.33rem 0.65rem !important;
-    right: 15px;
   }
   .ri-arrow-up-line {
     font-size: 1rem;
@@ -521,10 +589,6 @@ body.dark-theme {
   .navbar-nav a {
     padding-right: 0 !important;
   }
-  #scrollToTopBtn {
-    padding: 0.33rem 0.65rem !important;
-    right: 18px;
-  }
   .ri-arrow-up-line {
     font-size: 1.2rem;
   }
@@ -576,10 +640,7 @@ body.dark-theme {
   .container {
     padding: 1.4rem 2.8rem;
   }
-  #scrollToTopBtn {
-    padding: 0.33rem 0.65rem !important;
-    right: 20px;
-  }
+
   .ri-arrow-up-line {
     font-size: 1.4rem;
   }
@@ -627,10 +688,7 @@ body.dark-theme {
   .container {
     padding: 4.6rem 3.2rem;
   }
-  #scrollToTopBtn {
-    padding: 0.33rem 0.65rem !important;
-    right: 25px;
-  }
+
   .ri-arrow-up-line {
     font-size: 1.6rem;
   }

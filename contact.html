@@ -1,344 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <link rel="shortcut icon" type="image" href="img/logo.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dren Xhyliqi | Contact</title>
-     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
-    <!--=============== REMIX - BOX ICONS ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet" />
-    <!--=============== ANIMATE ON SCROLL LIBRARY ===============-->
+    <!-- Remix Box Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Animate on Scroll Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    
-    <!--========INTERNAL CSS===========-->
+    <!-- SweetAlert2 Theme -->
+    <link rel="stylesheet" href="@sweetalert2/theme-borderless/borderless.css">
+    <!-- Internal CSS -->
     <style>
-      :root {
-  --hue: 940;
-  --sat: 65%;
-  --lig: 50%;
-  --first-color: hsl(var(--hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--hue), var(--sat), 17%); /* -4% */
-  --title-color: hsl(var(--hue), 12%, 15%);
-  --text-color: hsl(var(--hue), 12%, 45%);
-  --text-color-light: hsl(var(--hue), 8%, 75%);
-  --text-color-lighten: hsl(var(--hue), 8%, 92%);
-  --body-color: hsl(var(--hue), 100%, 99%);
-  --container-color: #fff;
-}
-*{
-  cursor: none !important;
-}
-.contact_content a{
-  color: var(--text-color);
-}
-.contact_content a:hover{
-  color: var(--first-color);
-}
-button {
-  overflow: visible;
-}
+        :root {
+            --hue: 940;
+            --sat: 65%;
+            --lig: 50%;
+            --first-color: hsl(var(--hue), var(--sat), var(--lig));
+            --first-color-alt: hsl(var(--hue), var(--sat), 17%);
+            --title-color: hsl(var(--hue), 12%, 15%);
+            --text-color: hsl(var(--hue), 12%, 45%);
+            --text-color-light: hsl(var(--hue), 8%, 75%);
+            --text-color-lighten: hsl(var(--hue), 8%, 92%);
+            --body-color: hsl(var(--hue), 100%, 99%);
+            --container-color: #fff;
+        }
 
-button, select {
-  text-transform: none;
-}
+        * {
+            cursor: none !important;
+        }
 
-button, input, select, textarea {
-  color: var(--title-color) !important ;
-  font: inherit;
-  margin: 0;
-}
+        .contact_content a {
+            color: var(--text-color);
+        }
 
-input {
-  line-height: normal;
-}
+        .contact_content a:hover {
+            color: var(--first-color);
+        }
 
-textarea {
-  overflow: auto;
-}
+        button {
+            overflow: visible;
+        }
 
-.email {
-	float: right;
-	width: 45%;
-}
+        button,
+        select {
+            text-transform: none;
+        }
 
-input[type='text'], [type='email'], select, textarea {
-	background: none;
-  border: none;
-	border-bottom: solid 2px var(--first-color);
-   border-radius: 0; 
-	color: var(--title-color);
-	font-size: 1.000em;
-  font-weight: 400;
-  letter-spacing: 1px;
-	margin: 0em 0 1.875em 0;
-	padding: 0 0 0.875em 0;
-  text-transform: uppercase;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
+        button,
+        input,
+        select,
+        textarea {
+            color: var(--title-color) !important;
+            font: inherit;
+            margin: 0;
+        }
 
-input[type='text']:focus, [type='email']:focus, textarea:focus {
-	outline: none;
-	padding: 0 0 0.875em 0;
-   border-radius: 0; 
-}
+        input {
+            line-height: normal;
+        }
 
-.message {
-	float: none;
-}
+        textarea {
+            overflow: auto;
+        }
 
-.name {
-	float: left;
-	width: 45%;
-}
+        input[type='text'],
+        [type='email'],
+        select,
+        textarea {
+            background: none;
+            border: none;
+            border-bottom: solid 2px var(--first-color);
+            border-radius: 0;
+            color: var(--title-color);
+            font-size: 1.000em;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin: 0em 0 1.875em 0;
+            padding: 0 0 0.875em 0;
+            text-transform: uppercase;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
 
+        input[type='text']:focus,
+        [type='email']:focus,
+        textarea:focus {
+            outline: none;
+            padding: 0 0 0.875em 0;
+            border-radius: 0;
+        }
 
-select::-ms-expand {
-  display: none;
-}
+        .email {
+            float: right;
+            width: 45%;
+        }
 
-.subject {
-  width: 100%;
-}
+        .message {
+            float: none;
+        }
 
-.telephone {
-  width: 100%;
-}
+        .name {
+            float: left;
+            width: 45%;
+        }
 
-textarea {
-	line-height: 100%;
-	height: 100px;
-	resize: none;
-  width: 100%;
-}
+        select::-ms-expand {
+            display: none;
+        }
 
-::-webkit-input-placeholder {
-	color: var(--title-color);
-}
+        .subject,
+        .telephone {
+            width: 100%;
+        }
 
-:-moz-placeholder { 
-	color: var(--title-color);
-	opacity: 1;
-}
+        textarea {
+            line-height: 100%;
+            height: 100px;
+            resize: none;
+            width: 100%;
+        }
 
-::-moz-placeholder {
-	color: var(--title-color);
-	opacity: 1;
-}
+        ::-webkit-input-placeholder {
+            color: var(--title-color);
+        }
 
-:-ms-input-placeholder {
-	color: var(--title-color);
-}
+        :-moz-placeholder {
+            color: var(--title-color);
+            opacity: 1;
+        }
 
-#form_button {
-  background: none;
-  border: solid 2px var(--first-color);
-  color: var(--text-color);
-  display: inline-block;
-  font-size: 0.875em;
-  font-weight: 600;
-  outline: none;
-  padding: 20px 35px;
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
+        ::-moz-placeholder {
+            color: var(--title-color);
+            opacity: 1;
+        }
 
-#form_button:hover {
-  background: var(--first-color);
-  color: #fff !important ;
-}
+        :-ms-input-placeholder {
+            color: var(--title-color);
+        }
 
-@media screen and (max-width: 768px) {
-  #container {
-    margin: 0px auto;
-    width: 95%;
-  }
-}
+        #form_button {
+            background: none;
+            border: solid 2px var(--first-color);
+            color: var(--text-color);
+            display: inline-block;
+            font-size: 0.875em;
+            font-weight: 600;
+            outline: none;
+            padding: 20px 35px;
+            text-transform: uppercase;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
 
-@media screen and (max-width: 480px) {  
-  .underline {
-    width: 48px;
-  }
-  
-  #form_button {
-    padding: 15px 25px;
-  }
-}
+        #form_button:hover {
+            background: var(--first-color);
+            color: #fff !important;
+        }
 
-@media screen and (max-width: 420px) {
-  .underline {
-    width: 33px;
-  }
-  
-  input[type='text'], [type='email'], select, textarea {
-    font-size: 0.875em;
-  }
-}
+        @media screen and (max-width: 768px) {
+            #container {
+                margin: 0px auto;
+                width: 95%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .underline {
+                width: 48px;
+            }
+
+            #form_button {
+                padding: 15px 25px;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            .underline {
+                width: 33px;
+            }
+
+            input[type='text'],
+            [type='email'],
+            select,
+            textarea {
+                font-size: 0.875em;
+            }
+        }
     </style>
-  </head>
+</head>
   <body>
-    <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <label class="hamburger">
-            <input type="checkbox" />
-            <svg viewBox="0 0 32 32">
-              <path
-                class="line line-top-bottom"
-                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-              <path class="line" d="M7 16 27 16"></path>
-            </svg>
-          </label>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-0 mx-lg-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#courses"
-                >Courses</a
-              >
-            </li>
-          </ul>
+   <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <label class="hamburger">
+        <input type="checkbox" />
+        <svg viewBox="0 0 32 32">
+          <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+          <path class="line" d="M7 16 27 16"></path>
+        </svg>
+      </label>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-0 mx-lg-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#courses">Courses</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<i class="ri-moon-line change-theme mx-auto" id="theme-button"></i>
+
+<!-- BODY -->
+<body>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+  <div class="loader"></div>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="contact_content">
+            <h1>Let's Talk</h1>
+            <p>Get in touch with me!</p>
+            <a href="tel:049-218-791" class="text-decoration-none">+383 49 218 791</a><br>
+            <a href="mailto:xhyliqiidren@gmail.com" class="text-decoration-none">xhylqiidren@gmail.com</a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-8">
+          <div class="form">
+            <form id="contact_form" action="#">
+              <div class="name">
+                <label for="name"></label>
+                <input type="text" placeholder="Name" autocomplete="off" name="name" id="name_input" required>
+              </div>
+              <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="E-Mail" autocomplete="off" name="email" id="email_input" required>
+              </div>
+              <div class="telephone">
+                <label for="name"></label>
+                <input type="text" placeholder="Number" autocomplete="off" name="telephone" id="telephone_input" required>
+              </div>
+              <div class="message">
+                <label for="message"></label>
+                <textarea name="message" placeholder="Message" id="message_input" cols="30" rows="5" required></textarea>
+              </div>
+              <div class="submit">
+                <input type="submit" value="Send Message" id="form_button">
+              </div>
+            </form><!-- // End form -->
+          </div>
         </div>
       </div>
-    </nav>
-    <i class="ri-moon-line change-theme mx-auto" id="theme-button"></i>
-  </head>
-  <body>
-    <div class="cursor"></div>
-    <div class="cursor2"></div>
-    <div class="loader"></div>
-    <section id="contact">
-        <div class="container">
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <div class="contact_content">
-                        <h1>Let's Talk</h1>
-                        <p>Get in touch with me!</p>
-                        <a href="tel:049-218-791" class="text-decoration-none">+383 49 218 791</a><br>
-                        <a href="mailto:xhyliqiidren@gmail.com" class="text-decoration-none">xhylqiidren@gmail.com</a>
+    </div>
+  </section>
 
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-8">
-                    <div class="form">
-                      <form  id="contact_form" action="#">
-                        <div class="name">
-                          <label for="name"></label>
-                          <input type="text" placeholder="Name" autocomplete="off" name="name" id="name_input" required>
-                        </div>
-                        <div class="email">
-                          <label for="email"></label>
-                          <input type="email" placeholder="E-Mail"  autocomplete="off" name="email" id="email_input" required>
-                        </div>
-                        <div class="telephone">
-                          <label for="name"></label>
-                          <input type="text" placeholder="Number" autocomplete="off" name="telephone" id="telephone_input" required>
-                        </div>  
-                        <div class="message">
-                          <label for="message"></label>
-                          <textarea name="message" placeholder="Message" id="message_input" cols="30" rows="5" required></textarea>
-                        </div>
-                        <div class="submit">
-                          <input type="submit" value="Send Message" id="form_button" / >
-                        </div>
-                      </form><!-- // End form -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-     <!--======FOOTER=====-->
-   <footer class="footer container">
-      <div class="footer_icons d-flex justify-content-center">
-        <a
-          href="https://www.instagram.com/drenxhyliqii/"
-          target="_blank"
-          class="text-decoration-none"
-          ><i class="ri-instagram-line"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/dren-xhyliqi-b41225273/"
-          target="_blank"
-          ><i class="ri-linkedin-fill"></i
-        ></a>
-        <a href="https://www.facebook.com/drenxhyliqii" target="_blank"
-          ><i class="ri-facebook-fill"></i
-        ></a>
-        <a
-          href="https://api.whatsapp.com/send?phone=38349218791&amp;text=Pershendetje Dren!"
-          target="_blank"
-          ><i class="ri-whatsapp-line"></i>
-        </a>
-      </div>
-      <span class="footer__copy">
-        &#169; 2024 Dren Xhyliqi. All rights reserved! <br />
-        <img
-          src="/img/signature.png"
-          alt="img"
-          width="250px"
-          class="img-fluid" />
-      </span>
-    </footer>
-  </body>
-   <script src="script.js"></script>
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <!--=============== SCROLLREVEAL ===============-->
-  <script src="scrollreveal.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!--==== FORM JS====-->
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- FOOTER -->
+  <footer class="footer container">
+    <div class="footer_icons d-flex justify-content-center">
+      <a href="https://www.instagram.com/drenxhyliqii/" target="_blank" class="text-decoration-none"><i class="ri-instagram-line"></i></a>
+      <a href="https://www.linkedin.com/in/dren-xhyliqi-b41225273/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+      <a href="https://www.facebook.com/drenxhyliqii" target="_blank"><i class="ri-facebook-fill"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=38349218791&amp;text=Pershendetje Dren!" target="_blank"><i class="ri-whatsapp-line"></i></a>
+    </div>
+    <span class="footer__copy">&#169; 2024 Dren Xhyliqi. All rights reserved! <br /><img src="/img/signature.png" alt="img" width="250px" class="img-fluid" /></span>
+  </footer>
+</body>
 
-  <script>
-    AOS.init();
-  </script>
+<!-- SCRIPTS -->
+<script src="script.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="scrollreveal.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>AOS.init();</script>
+
 </html>

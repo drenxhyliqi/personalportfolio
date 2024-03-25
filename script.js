@@ -70,26 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
   sr.reveal(".tech", { delay: 800 });
   sr.reveal(".profile", { delay: 450 });
 });
-/*======SCROLL TO TOP====== */
-window.onscroll = function () {
-  scrollFunction();
-};
 
-function scrollFunction() {
-  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollToTopBtn.style.display = "block";
-  } else {
-    scrollToTopBtn.style.display = "none";
-  }
-}
-
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth", // Smooth scrolling behavior
-  });
-}
 /*  COSTUM CURSOR */
 
 var cursor = document.querySelector(".cursor");
@@ -111,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const message = document.getElementById("message_input");
 
     const bodyMessage = `Full name: ${name.value}<br> Email: ${email.value}<br> Phone: ${phone.value} <br> Message: ${message.value}`;
-    const subject = "Your Custom Subject Here";
+    const subject = "Contact Form | Portfolio";
 
     Email.send({
       Host: "smtp.elasticemail.com",
@@ -125,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (message == "OK") {
         Swal.fire({
           title: "Faleminderit!",
-          text: "Do te ju kontaktoje se shpejti!",
+          text: "Do te ju kontaktoje se shpejti.",
           icon: "success",
         });
         form.reset();
@@ -133,3 +114,49 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+/* SCROLL TO TOP */
+(function ($) {
+  "use strict";
+
+  $(document).ready(function () {
+    "use strict";
+
+    // Scroll back to top
+    var progressPath = document.querySelector(".progress-wrap path");
+    var pathLength = progressPath.getTotalLength();
+    progressPath.style.transition = progressPath.style.WebkitTransition = "none";
+    progressPath.style.strokeDasharray = pathLength + " " + pathLength;
+    progressPath.style.strokeDashoffset = pathLength;
+    progressPath.getBoundingClientRect();
+    progressPath.style.transition = progressPath.style.WebkitTransition = "stroke-dashoffset 10ms linear";
+
+    var updateProgress = function () {
+      var scroll = $(window).scrollTop();
+      var height = $(document).height() - $(window).height();
+      var progress = pathLength - (scroll * pathLength) / height;
+      progressPath.style.strokeDashoffset = progress;
+    };
+
+    updateProgress();
+    $(window).scroll(updateProgress);
+
+    var offset = 50;
+    var duration = 550;
+
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > offset) {
+        $(".progress-wrap").addClass("active-progress");
+      } else {
+        $(".progress-wrap").removeClass("active-progress");
+      }
+    });
+
+    $(".progress-wrap").on("click", function (event) {
+      event.preventDefault();
+      $("html, body").animate({ scrollTop: 0 }, duration);
+      return false;
+    });
+  });
+})(jQuery);
+
